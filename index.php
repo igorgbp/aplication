@@ -11,11 +11,31 @@ p{
 color: blue;
 font-size: 30px;
 }
+div{
+background-color:#aaa;
+/* align-items: center; */
+width:500px;
+text-align:center;
+/* align-items: center; */
+border-radius:20px;
+justify-content:center;
+}
+body{
+    background-color:#2a2a2a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+}
+img{
+    border-radius: 40px;
+}
 </style>
 </head>
 
 <body>
-    <div style=" color:darkcyan";>
+    <div>
         <h1>
             <?php
             define('_BASE', $_SERVER['DOCUMENT_ROOT'] . '/aplication/');
@@ -27,9 +47,9 @@ font-size: 30px;
 
             //  $u = new Usuario();
             //  $u -> setId('1');
-            //  $u -> setNome('igor gabriel');
-            //  $u -> setSexo('masculino');
-            //  $u -> setEmail('igor2@gmail.com');
+            //  $u -> setNome('igor asdf');
+            //  $u -> setSexo('masculiasdfno');
+            //  $u -> setEmail('igor2@asdfasdf.com');
 
             //  $du = new DaoUsers();
 
@@ -46,10 +66,10 @@ font-size: 30px;
                 foreach ($valor as $item => $dado) {
                     echo '<pre>';
                     echo ($item . ':' . $dado);
-
                     echo '</pre>';
                 }
                 echo '<br>';
+                echo '<hr>';
             }
 
             // echo '<pre>';
@@ -59,8 +79,11 @@ font-size: 30px;
 
             ?>
         </h1>
-        <p>asdfasasdfasdfdf</p>
+        <img src="https://th.bing.com/th/id/OIP.LIIAoCSSGv8EBsV99qeOyAHaE8?pid=ImgDet&rs=1" height="150px" width="150px" >
     </div>
+    <img
+            
+    />
 
 </body>
 
