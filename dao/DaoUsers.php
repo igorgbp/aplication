@@ -24,4 +24,16 @@ class DaoUsers
             return false;
         }
     }
+
+    public function exclui (Usuario $usuario)
+    {
+        $sql = 'delete from usuarios where id = ?';
+        $pst = Conexao::getPreparedStatement($sql);
+        $pst -> bindValue(1, $usuario->getId());
+        if ($pst -> execute()){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
