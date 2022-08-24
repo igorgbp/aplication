@@ -36,4 +36,22 @@ class DaoUsers
             return false;
         }
     }
+
+
+    public function update (Usuario $usuario)
+    {
+        $sql = 'update usuarios set nome = ?, sexo = ?, email = ? where id = ?';
+        $pst = Conexao::getPreparedStatement($sql);
+        $pst -> bindValue(1, $usuario->getNome());
+        $pst -> bindValue(2, $usuario->getSexo());
+        $pst -> bindValue(3, $usuario->getEmail());
+        $pst -> bindValue(4, $usuario->getId());
+
+        if ($pst ->execute())
+        {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

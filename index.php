@@ -48,6 +48,8 @@
             require_once _BASE . 'dao/DaoUsers.php';
 
 
+
+            // ADD
             //  $u = new Usuario();
             //  $u -> setId('4');
             //  $u -> setNome('simon');
@@ -55,8 +57,6 @@
             //  $u -> setEmail('simon@gmail.com');
 
             //  $du = new DaoUsers();
-
-
             //  if (    $du->Add($u)) {
             //     echo 'cadastro realizado';
             //  } else {
@@ -64,7 +64,7 @@
             //  }
 
 
-
+            // LISTAR
             // $du = new DaoUsers();
             // $list = $du->list();
             // foreach ($list as $indice => $valor) {
@@ -80,12 +80,11 @@
 
 
 
-
+            // EXCLUI
             //  $u = new Usuario();
             //  $u -> setId('3');
 
             //  $du = new DaoUsers();
-
 
             //  if (    $du->exclui($u)) {
             //     echo 'usuario exluido com sucesso';
@@ -94,6 +93,8 @@
             //  }
 
 
+
+            // LISTAR
             $du = new DaoUsers();
             $list = $du->list();
             foreach ($list as $indice => $valor) {
@@ -108,6 +109,23 @@
 
 
 
+            // UPDATE
+            // $u = new Usuario();
+            // $u->setId('1');
+            // $u->setNome('simon');
+            // $u->setSexo('masculino');
+            // $u->setEmail('simon@gmail.com');
+
+            // $du = new DaoUsers();
+            // if ($du->update($u)) {
+            //     echo 'update realizado';
+            // } else {
+            //     echo 'erro fazer update';
+            // }
+
+
+
+
             // echo '<pre>';
             // print_r($list);
             // echo '</pre>';
@@ -115,6 +133,11 @@
 
             ?>
         </h1>
+
+        <form>
+            <button></button>
+
+        </form>
         <img src="https://th.bing.com/th/id/OIP.LIIAoCSSGv8EBsV99qeOyAHaE8?pid=ImgDet&rs=1" height="150px" width="150px">
     </div>
     <img />
