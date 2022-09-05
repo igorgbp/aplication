@@ -15,11 +15,14 @@
         div {
             background-color: #aaa;
             /* align-items: center; */
-            width: 500px;
+            width: 600px;
             text-align: center;
+            align-items: center;
             /* align-items: center; */
             border-radius: 20px;
             justify-content: center;
+            border-width: 90px;
+            border-color: #FFF;
         }
 
         body {
@@ -27,12 +30,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-
+            flex-direction: column;
         }
 
         img {
             border-radius: 40px;
+        }
+        h1{
+            align-self: center;
         }
     </style>
 </head>
@@ -51,10 +56,10 @@
 
             // ADD
             //  $u = new Usuario();
-            //  $u -> setId('4');
-            //  $u -> setNome('simon');
-            //  $u -> setSexo('masculino');
-            //  $u -> setEmail('simon@gmail.com');
+            //  $u -> setId('7');
+            //  $u -> setNome('maria');
+            //  $u -> setSexo('feminino');
+            //  $u -> setEmail('maria@gmail.com');
 
             //  $du = new DaoUsers();
             //  if (    $du->Add($u)) {
@@ -97,17 +102,23 @@
             // LISTAR
             $du = new DaoUsers();
             $list = $du->list();
+            echo '<table border="1">';
+            echo '<tr>';
+            echo '<th>id </th>';
+            echo '<th>nome </th>';
+            echo '<th>sexo </th>';
+            echo '<th>email </th>';
+            echo '</tr>';
             foreach ($list as $indice => $valor) {
+                echo '<tr>';
                 foreach ($valor as $item => $dado) {
-                    echo '<pre>';
-                    echo ($item . ':' . $dado);
-                    echo '</pre>';
+                    echo '<td>';
+                    echo ($dado);
+                    echo '</td>';
                 }
-                echo '<br>';
-                echo '<hr>';
+                echo '</tr>';
             }
-
-
+            echo '</table>';
 
             // UPDATE
             // $u = new Usuario();
@@ -132,15 +143,24 @@
 
 
             ?>
+
+
+
+
         </h1>
 
-        <form>
-            <button></button>
+        <!-- <form>
+            <button>entrar</button>
 
         </form>
         <img src="https://th.bing.com/th/id/OIP.LIIAoCSSGv8EBsV99qeOyAHaE8?pid=ImgDet&rs=1" height="150px" width="150px">
     </div>
-    <img />
+
+    <div>
+
+        <p>igor</p>
+    </div>
+    <img /> -->
 
 </body>
 
