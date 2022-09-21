@@ -42,6 +42,7 @@
             }
             // echo ($valor);
             echo ' <td> <a href = "deleteUserData.php?codigo=' . $valor['id'] . '">excluir</a></td>';
+            echo ' <td> <a href = "editUserData.php?codigo=' . $valor['id'] . '">editar</a></td>';
             echo '</tr>';
         }
 

@@ -19,7 +19,7 @@
             <label for='id_user'>id do usuário</label>
             <input type='text' name='id_user' id='id_user'> <br />
 
-            <label for='name_user'>Nome do usuário</label>
+            <label for='name_user' >Nome do usuário</label>
             <input type='text' name='name_user' id='name_user'> <br />
             <!-- <label for = 'data_nascimento'>Data de nascimento</label>
         <input type='date' name='data_nascimento' id = 'data_nascimento'> -->
