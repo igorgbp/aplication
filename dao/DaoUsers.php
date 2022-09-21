@@ -63,19 +63,19 @@ class DaoUsers
         $list = $pst -> fetchAll(PDO::FETCH_ASSOC);
         return $list;
     }
-    public function Edita (Usuario $usuario)
-    {
-        $sql = 'update usuarios set nome=?, sexo =?, email=? where id= ?';
-        $pst = Conexao::getPreparedStatement($sql);
-        $pst -> bindValue(1, $usuario->getNome());
-        $pst -> bindValue(2, $usuario->getSexo());
-        $pst -> bindValue(3, $usuario->getEmail());
-        $pst -> bindValue(4, $usuario->getId());
+    // public function Edita (Usuario $usuario)
+    // {
+    //     $sql = 'update usuarios set nome=?, sexo =?, email=? where id= ?';
+    //     $pst = Conexao::getPreparedStatement($sql);
+    //     $pst -> bindValue(1, $usuario->getNome());
+    //     $pst -> bindValue(2, $usuario->getSexo());
+    //     $pst -> bindValue(3, $usuario->getEmail());
+    //     $pst -> bindValue(4, $usuario->getId());
 
-        if ($pst -> execute ()) {
-            return true;
-        }   else {
-            return false;
-        }
-    }
+    //     if ($pst -> execute ()) {
+    //         return true;
+    //     }   else {
+    //         return false;
+    //     }
+    // }
 }

@@ -34,7 +34,7 @@
     $u->setEmail($email);
 
     $du = new DaoUsers();
-    if ($du->Edita($u)) {
+    if ($du->update($u)) {
         echo 'editado';
     } else {
         echo 'erro ao editar';
