@@ -42,10 +42,10 @@
 
 
     ?>
-    <form action = 'new.php'>
+    <form action='new.php'>
         <button> voltar</button>
     </form>
-    <form action = 'seeUserData.php'>
+    <form action='seeUserData.php'>
         <button> Ver usuarios </button>
     </form>
 </body>

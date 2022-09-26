@@ -1,0 +1,26 @@
+div{
+    /* color : blue; */
+    background-color: #aaa;
+    align-items: center;
+    justify-content: center;
+
+    width: 16%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+}
+form{
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+body{
+    background-color:#aabbcc;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black
+}
+h1{
+    color: blue;
+}
